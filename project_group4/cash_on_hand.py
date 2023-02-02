@@ -37,7 +37,7 @@ def COH_diff():
     - No parameters required
     """
     
-    # Used len(cash_on_hand_amt)-1 because we had 7 days (44-50) we just want 6 days (45-50)
+    # Used len(cash_on_hand_amt)-1 because we had 7 days (44-50) and only 6 days is required (45-50)
     for number in range(0,(len(cash_on_hand_amt)-1)):
         previous_day = cash_on_hand_amt[number]
         current_day = cash_on_hand_amt[number+1]
