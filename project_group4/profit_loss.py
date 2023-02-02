@@ -13,7 +13,7 @@ net_profit_amt = []
 
 # Using the .open() function to access the csv file which is for reading the file
 with fp_read.open(mode="r", encoding="UTF-8", newline="") as file:
-    # Create csv reader object using csv
+    # Create csv reader object using csv so that data can be processed
     reader = csv.reader(file)
 
     # To skip reading header 
@@ -40,7 +40,7 @@ def net_profit_diff():
         previous_day = net_profit_amt[number]
         current_day = net_profit_amt[number+1]
 
-        # Creates condition that if current day value is less than previous day value, it will return
+        # Creates condition that if current day value is less than previous day value, it returns
         # the difference amount or the profit deficit with the latest day printed.
         if current_day < previous_day:
             difference = previous_day - current_day
