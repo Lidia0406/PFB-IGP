@@ -1,9 +1,9 @@
 ## This is our main file, where solutions are printed to the text file.
 
-# Import modules
+# Import modules "cash_on_hand", "overheads" and "profit_loss"
 import cash_on_hand,overheads,profit_loss
 
-# Call other modules cash_on_hand, overheads, profit lost with module.function()
+# Call other modules "cash_on_hand", "overheads", "profit_lost" with module.function()
 def main():
     """
     - This function will get functions from other modules and execute
