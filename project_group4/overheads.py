@@ -45,7 +45,7 @@ def highest_overhead_amt():
             highest_overheads_title = name[0]
             
             # Used if statement, summary_path and .open() method to append lines
-            with fp_write.open(mode="a", encoding="UTF8", newline="") as file: 
+            with fp_write.open(mode="w", encoding="UTF8", newline="") as file: 
 
                 # Used .write() method and f strings to create and write the highest overhead title 
                 # and its respective amount       
